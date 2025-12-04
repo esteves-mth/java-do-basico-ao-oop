@@ -39,7 +39,7 @@ public class Car {
     }
 
     public boolean isVintage(){
-        return (this.getYear() > 20);
+        return (calculateCarAge() > 20);
     }
 
     public double calculateDepreciation(){
