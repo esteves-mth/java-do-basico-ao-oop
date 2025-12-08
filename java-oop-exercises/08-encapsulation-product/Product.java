@@ -3,6 +3,12 @@ public class Product {
     private double price;
     private int quantity;
 
+    public Product(String name, double price, int quantity) {
+        setName(name);
+        setPrice(price);
+        setQuantity(quantity);
+    }
+
     public String getName() {
         return this.name;
     } public void setName(String name) {
@@ -20,11 +26,11 @@ public class Product {
     public int getQuantity() {
         return this.quantity;
     } public void setQuantity(int quantity) {
-        if (quantity > 0) {
+        if (quantity >= 0) {
             this.quantity = quantity;
         }
     }
-    
+
     public double calculateTotalValue(){
         return (getPrice()*getQuantity());
     }
