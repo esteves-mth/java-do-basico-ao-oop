@@ -1,3 +1,5 @@
+package Animal;
+
 class Animal{
     String name;
     String species;

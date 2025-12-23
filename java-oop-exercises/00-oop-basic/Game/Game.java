@@ -1,3 +1,5 @@
+package Game;
+
 class Game{
     String name;
     String genre;
